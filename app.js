@@ -34,10 +34,10 @@ app.get('/', (req, res) => {
 	res.render('index');
 })
 	.get('/login', (req, res) => {
-		res.render('login');
+		res.render('sign-in');
 	})
 	.get('/register', (req, res) => {
-		res.render('register');
+		res.render('sign-up');
 	})
 
 	.get('/home', authenticateUser, (req, res) => {
